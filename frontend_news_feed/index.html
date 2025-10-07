@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive News Feed</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Section -->
+        <div id="registerSection">
+            <h1>Register for News Topics</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <label for="topics">Topics of Interest (comma separated):</label>
+            <input type="text" id="topics" placeholder="e.g., sports, movies">
+            <button id="saveuser">Save User Data</button>
+            <p id="userSaved"></p>
+            <button id="goToViewFeed">Go to News Feed View</button>
+        </div>
+
+        <!-- News Feed Section -->
+        <div id="viewFeedSection" style="display: none;">
+            <h1>News Feeds</h1>
+            <button id="getusers">Load News Feeds</button>
+            <div id="newsFeedContainer">
+                <!-- News articles will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Your custom JS file -->
+</body>
+</html>
